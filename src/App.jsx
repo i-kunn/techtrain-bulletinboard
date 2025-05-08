@@ -1,19 +1,17 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 
+import { useEffect, useState } from 'react'
 function App() {
-  const [threads, setThreads] = useState([]);
-
+  const [threads, setthreads] = useState([]);
   useEffect(() => {
-    axios.get('https://railway.bulletinboard.techtrain.dev/threads')
-      .then((res) => {
-        setThreads(res.data);
+    fetch('https://railway.bulletinboard.techtrain.dev/threads')
+      .then((res) => res.json())
+      .then((data) => {
+        setthreads(data);
       })
       .catch((err) => {
-        console.error('取得エラー:', err);
+        console.error('取得エラー:', err)
       });
   }, []);
-
   return (
     <div>
       <h1>掲示板アプリ</h1>
@@ -25,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
