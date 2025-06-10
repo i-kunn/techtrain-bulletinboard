@@ -15,17 +15,14 @@ h1 {
   margin-bottom: 20px;
   text-align: center;
 }
-
+/* タイトルの色変更 */
 h2 {
   font-size: 2rem;
   color: #007bff;
   text-align: left;
 }
 
-
-
-
-/* リンクボタン風
+/* リンクボタン風 */
 .nav-link {
   display: inline-block;
   margin: 5px 10px;
@@ -41,7 +38,7 @@ h2 {
 } */
 
 /* スレッドリストのスタイル（ThreadList内で使う予定） */
-/* .thread-card {
+ .thread-card {
   padding: 12px;
   margin-bottom: 10px;
   background-color: #f8f9fa;
@@ -52,4 +49,4 @@ h2 {
 
 .thread-card:hover {
   background-color: #e9ecef;
-} */
+} 
